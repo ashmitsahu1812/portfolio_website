@@ -35,4 +35,7 @@ const AppWrapper = () => {
   );
 };
 
-createRoot(document.getElementById("root")!).render(<AppWrapper />);
+const rootElement = document.getElementById("root");
+if (rootElement && !rootElement.hasChildNodes()) {
+  createRoot(rootElement).render(<AppWrapper />);
+}
