@@ -12,7 +12,7 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const AppWrapper = () => {
+const App = () => {
   useEffect(() => {
     // Set dark mode by default
     document.documentElement.classList.add("dark");
@@ -37,5 +37,7 @@ const AppWrapper = () => {
 
 const rootElement = document.getElementById("root");
 if (rootElement && !rootElement.hasChildNodes()) {
-  createRoot(rootElement).render(<AppWrapper />);
+  createRoot(rootElement).render(<App />);
 }
+
+export default App;
