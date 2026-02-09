@@ -1,5 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowRight, ExternalLink, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import {
+  ArrowRight,
+  ExternalLink,
+  Github,
+  Linkedin,
+  Mail,
+  Twitter,
+} from "lucide-react";
 
 export default function Index() {
   const [scrollY, setScrollY] = useState(0);
@@ -94,10 +101,16 @@ export default function Index() {
             <a href="#work" className="text-sm hover:text-cyan-400 transition">
               Work
             </a>
-            <a href="#skills" className="text-sm hover:text-cyan-400 transition">
+            <a
+              href="#skills"
+              className="text-sm hover:text-cyan-400 transition"
+            >
               Skills
             </a>
-            <a href="#contact" className="text-sm hover:text-cyan-400 transition">
+            <a
+              href="#contact"
+              className="text-sm hover:text-cyan-400 transition"
+            >
               Contact
             </a>
           </div>
@@ -109,7 +122,10 @@ export default function Index() {
       <section className="relative min-h-screen flex items-center justify-center pt-20 pb-20 px-6">
         {/* Animated orbs */}
         <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-40 right-10 w-96 h-96 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-full blur-3xl" style={{ animation: "float 3s ease-in-out infinite 2s" }} />
+        <div
+          className="absolute bottom-40 right-10 w-96 h-96 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-full blur-3xl"
+          style={{ animation: "float 3s ease-in-out infinite 2s" }}
+        />
 
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <div className="mb-6 inline-block">
@@ -125,8 +141,8 @@ export default function Index() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
-            A digital craftsman obsessed with creating jaw-dropping experiences that blend
-            design, technology, and art into something unforgettable.
+            A digital craftsman obsessed with creating jaw-dropping experiences
+            that blend design, technology, and art into something unforgettable.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -160,20 +176,20 @@ export default function Index() {
               </h2>
 
               <p className="text-lg text-gray-300 leading-relaxed">
-                With 8 years of experience in digital design and development, I've worked with
-                startups and Fortune 500 companies to create digital products that don't just
-                work—they inspire.
+                With 8 years of experience in digital design and development,
+                I've worked with startups and Fortune 500 companies to create
+                digital products that don't just work—they inspire.
               </p>
 
               <p className="text-lg text-gray-300 leading-relaxed">
-                I specialize in building beautiful, performant web experiences using cutting-edge
-                technologies and design principles. Every pixel matters, and every interaction
-                tells a story.
+                I specialize in building beautiful, performant web experiences
+                using cutting-edge technologies and design principles. Every
+                pixel matters, and every interaction tells a story.
               </p>
 
               <p className="text-lg text-gray-300 leading-relaxed">
-                When I'm not designing or coding, you'll find me exploring the intersection of
-                art, technology, and user experience.
+                When I'm not designing or coding, you'll find me exploring the
+                intersection of art, technology, and user experience.
               </p>
 
               <div className="pt-6">
@@ -188,7 +204,9 @@ export default function Index() {
                 <div className="w-full h-full flex items-center justify-center">
                   <div className="text-center">
                     <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-cyan-400/40 to-pink-400/40 blur-xl animate-pulse mb-6" />
-                    <p className="text-cyan-300 font-semibold">Digital Craftsman</p>
+                    <p className="text-cyan-300 font-semibold">
+                      Digital Craftsman
+                    </p>
                   </div>
                 </div>
               </div>
@@ -208,7 +226,12 @@ export default function Index() {
             {[
               {
                 category: "Frontend",
-                skills: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+                skills: [
+                  "React",
+                  "TypeScript",
+                  "Tailwind CSS",
+                  "Framer Motion",
+                ],
                 icon: "🎨",
               },
               {
@@ -233,14 +256,16 @@ export default function Index() {
               },
               {
                 category: "Soft Skills",
-                skills: ["Leadership", "Communication", "Problem-solving", "Collaboration"],
+                skills: [
+                  "Leadership",
+                  "Communication",
+                  "Problem-solving",
+                  "Collaboration",
+                ],
                 icon: "🤝",
               },
             ].map((skillGroup, idx) => (
-              <div
-                key={idx}
-                className="card-premium group cursor-pointer"
-              >
+              <div key={idx} className="card-premium group cursor-pointer">
                 <div className="text-4xl mb-4">{skillGroup.icon}</div>
                 <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-cyan-300 transition">
                   {skillGroup.category}
@@ -272,19 +297,22 @@ export default function Index() {
             {[
               {
                 title: "TechFlow Dashboard",
-                description: "A real-time analytics platform with interactive visualizations",
+                description:
+                  "A real-time analytics platform with interactive visualizations",
                 tags: ["React", "TypeScript", "D3.js"],
                 image: "bg-gradient-to-br from-cyan-600/30 to-blue-600/30",
               },
               {
                 title: "Creative Studio",
-                description: "Portfolio website featuring immersive scrolling experiences",
+                description:
+                  "Portfolio website featuring immersive scrolling experiences",
                 tags: ["Next.js", "Framer Motion", "WebGL"],
                 image: "bg-gradient-to-br from-pink-600/30 to-purple-600/30",
               },
               {
                 title: "Marketplace Platform",
-                description: "Full-stack e-commerce platform with advanced filtering",
+                description:
+                  "Full-stack e-commerce platform with advanced filtering",
                 tags: ["React", "Node.js", "MongoDB"],
                 image: "bg-gradient-to-br from-green-600/30 to-teal-600/30",
               },
@@ -292,7 +320,9 @@ export default function Index() {
               <div key={idx} className="card-premium overflow-hidden group">
                 <div className="grid md:grid-cols-3 gap-8 items-stretch">
                   {/* Image side */}
-                  <div className={`${project.image} rounded-lg h-64 md:h-auto md:col-span-1 relative overflow-hidden`}>
+                  <div
+                    className={`${project.image} rounded-lg h-64 md:h-auto md:col-span-1 relative overflow-hidden`}
+                  >
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-black/30" />
                   </div>
 
@@ -302,11 +332,16 @@ export default function Index() {
                       <h3 className="text-3xl font-bold mb-3 group-hover:text-cyan-300 transition">
                         {project.title}
                       </h3>
-                      <p className="text-gray-400 text-lg mb-6">{project.description}</p>
+                      <p className="text-gray-400 text-lg mb-6">
+                        {project.description}
+                      </p>
 
                       <div className="flex flex-wrap gap-2 mb-8">
                         {project.tags.map((tag) => (
-                          <span key={tag} className="text-sm px-3 py-1 rounded-full bg-white/5 border border-white/10 text-cyan-300">
+                          <span
+                            key={tag}
+                            className="text-sm px-3 py-1 rounded-full bg-white/5 border border-white/10 text-cyan-300"
+                          >
                             {tag}
                           </span>
                         ))}
@@ -341,26 +376,33 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                quote: "JAX transformed our product with exceptional design and execution. A true visionary.",
+                quote:
+                  "JAX transformed our product with exceptional design and execution. A true visionary.",
                 author: "Sarah Chen",
                 title: "CEO, TechVenture",
               },
               {
-                quote: "Working with JAX was a game-changer. The attention to detail is unmatched.",
+                quote:
+                  "Working with JAX was a game-changer. The attention to detail is unmatched.",
                 author: "Michael Rodriguez",
                 title: "Product Lead, DataFlow",
               },
               {
-                quote: "One of the most talented developers I've worked with. Highly recommended.",
+                quote:
+                  "One of the most talented developers I've worked with. Highly recommended.",
                 author: "Emma Thompson",
                 title: "Founder, CreativeStudio",
               },
             ].map((testimonial, idx) => (
               <div key={idx} className="card-premium">
                 <div className="mb-6 text-cyan-400 text-4xl">"</div>
-                <p className="text-gray-300 mb-8 leading-relaxed">{testimonial.quote}</p>
+                <p className="text-gray-300 mb-8 leading-relaxed">
+                  {testimonial.quote}
+                </p>
                 <div className="border-t border-white/10 pt-6">
-                  <p className="font-semibold text-white">{testimonial.author}</p>
+                  <p className="font-semibold text-white">
+                    {testimonial.author}
+                  </p>
                   <p className="text-sm text-gray-400">{testimonial.title}</p>
                 </div>
               </div>
@@ -385,7 +427,9 @@ export default function Index() {
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="relative">
-                  <label className="block text-sm font-semibold mb-3">Full Name</label>
+                  <label className="block text-sm font-semibold mb-3">
+                    Full Name
+                  </label>
                   <input
                     type="text"
                     placeholder="Your name"
@@ -393,7 +437,9 @@ export default function Index() {
                   />
                 </div>
                 <div className="relative">
-                  <label className="block text-sm font-semibold mb-3">Email</label>
+                  <label className="block text-sm font-semibold mb-3">
+                    Email
+                  </label>
                   <input
                     type="email"
                     placeholder="your@email.com"
@@ -403,7 +449,9 @@ export default function Index() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold mb-3">Project Details</label>
+                <label className="block text-sm font-semibold mb-3">
+                  Project Details
+                </label>
                 <textarea
                   rows={6}
                   placeholder="Tell me about your project..."
@@ -411,7 +459,10 @@ export default function Index() {
                 />
               </div>
 
-              <button type="submit" className="btn-premium w-full flex items-center justify-center gap-2">
+              <button
+                type="submit"
+                className="btn-premium w-full flex items-center justify-center gap-2"
+              >
                 Send Message
                 <ArrowRight className="w-5 h-5" />
               </button>
